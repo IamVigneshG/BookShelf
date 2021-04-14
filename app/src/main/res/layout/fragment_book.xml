@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/m_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivFavImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFavImage" />
+
+    <TextView
+        android:id="@+id/tvAuthorBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       style="@style/textViewStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleBooks" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       style="@style/textViewStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthorBooks" />
+
+    <TextView
+        android:id="@+id/tvPageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        app:layout_constraintEnd_toStartOf="@+id/tvPublishDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
+
+    <TextView
+        android:id="@+id/tvPublishDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        android:layout_marginStart="@dimen/m_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPageCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/long_description"
+        style="@style/textViewStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPublishDate" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/longDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_16"
+            android:padding="2dp"
+            android:lineSpacingExtra="1dp"
+            android:fallbackLineSpacing="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFavImage" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ivFavBookFragment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/l_margin"
+        android:padding="@dimen/s_padding"
+        android:src="@drawable/staroutline"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFavImage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

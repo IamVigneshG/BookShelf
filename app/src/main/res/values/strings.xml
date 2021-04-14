@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BookShelf</string>
+    <string name="book_name">BooK Name</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_book_count">Category Books Count</string>
+    <string name="author">Author</string>
+    <string name="published_date">PUBLISHED DATE</string>
+    <string name="page_count">PAGE COUNT</string>
+    <string name="category">Category</string>
+    <string name="favourites">Favourites</string>
+    <string name="long_description">Long Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_fav_fragment">No Favorite Books Added</string>
+    <string name="no_cat_fragment">No Category  Added</string>
+</resources>
