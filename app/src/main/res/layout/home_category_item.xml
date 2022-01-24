@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/category_name"
         style="@style/textViewStyle"
+
         app:layout_constraintEnd_toEndOf="@+id/ivHomeCategory"
         app:layout_constraintStart_toStartOf="@+id/ivHomeCategory"
         app:layout_constraintTop_toBottomOf="@+id/ivHomeCategory"/>
